@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #313131 !important;
+    
+}
+.navbar p,a,li{
+    color: #fff !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+.navbar-nav {
+    gap: 30px;
+  }
+  .nav-link{
+    border-bottom: 1px solid transparent;
+    position: relative;
+  }
+  .nav-link:hover{
+border-bottom: 1px solid #fff;
+transition: all ease-in-out 0.2s;
+  }
+
+  @keyframes down {
+
+  }
