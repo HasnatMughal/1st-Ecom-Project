@@ -1,6 +1,9 @@
 *{
   font-family: 'Poppins', sans-serif;
 }
+header{
+  height: 90vh;
+}
 .navbar{
     background-color: #313131 !important;
     
@@ -92,6 +95,40 @@ transition: all ease-in-out 0.2s;
   font-size: 2rem;
 }
 
-.shop{
+.Categories{
   margin-top: 5rem;
+  height: 80vh;
+
+}
+.shop-cat{
+  display: flex;
+  gap: 3rem;
+
+}
+.shop-cat .jackets, .coats, .trousers{
+  position: relative;
+width: 23rem;
+height: 23rem;
+object-fit: contain;
+border: 1px solid black;
+}
+
+.product-img{
+  width: 22rem;
+}
+
+.bottom{
+  margin-top: 1rem;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.product-explore-btn{
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  color: #313131;
+  cursor: pointer;
+  background-color: transparent;
 }
