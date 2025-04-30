@@ -1,3 +1,6 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .navbar{
     background-color: #313131 !important;
     
@@ -22,24 +25,50 @@
 border-bottom: 1px solid #fff;
 transition: all ease-in-out 0.2s;
   }
+  .hero{
+    background-color: #313131;
+  }
+  .hero-head{
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    padding: 1rem;margin-bottom: 2rem;
+  }
+  .hero-btn{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    color: #313131;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    font-weight: 500;
+  }
+  .hero-btn:hover{
+    background-color: transparent;
+    color: white;
+  }
   .slide-image-wrap{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     /* max-width: 100vw; */
     margin: auto;
    
   }
   .slides{
     display: flex;
-    transition: transform ease 0.5s;
+    transition: transform ease 1s;
     flex-wrap: nowrap;
   }
 .slide{
   min-width: 100%;
   object-fit: contain;
-  height: 70vh;
+  height: 60vh;
 }
 .prev{
   position: absolute;
@@ -58,10 +87,11 @@ transition: all ease-in-out 0.2s;
   width: 4rem;
   height: 3rem;
   border: none;
-  background-color: #fff;
-  color: #313131;
-}
-.header-btn:hover{
+  background-color: transparent;
   color: #fff;
-  background-color: #313131;
+  font-size: 2rem;
+}
+
+.shop{
+  margin-top: 5rem;
 }
