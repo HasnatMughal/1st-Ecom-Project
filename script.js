@@ -35,3 +35,10 @@ prevBtn.addEventListener('click',function(){
 setInterval(()=>{
     nextSlide()
 },3000)
+
+// ########### Sale Timer ############
+const Time = new Date;
+let days = document.querySelectorAll('.days');
+let hours = document.querySelectorAll('.hours');
+let minutes = document.querySelectorAll('.minutes');
+

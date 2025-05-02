@@ -61,7 +61,7 @@ transition: all ease-in-out 0.2s;
   .slide-image-wrap{
     position: relative;
     overflow: hidden;
-    width: 100%;
+    /* width: 100%; */
     height: 70vh;
     /* max-width: 100vw; */
     margin: auto;
@@ -101,7 +101,7 @@ transition: all ease-in-out 0.2s;
 
 .Categories{
   margin-top: 5rem;
-  min-height: 90vh;
+  min-height: 50vh;
   height: auto;
 /* margin: 0 auto; */
 margin-bottom: 5rem;
@@ -114,16 +114,16 @@ margin: 0 auto;
 }
 .shop-cat .category{
   position: relative;
-width: 20rem;
-height: 24rem;
+width: 24rem;
+height: 28rem;
 object-fit: contain;
 /* border: 1px solid black; */
-box-shadow: 0px 12px 20px 5px #313131;
+/* box-shadow: 0px 12px 20px 5px #313131; */
 margin: 0 auto;
 }
 
 .product-img-wrap{
-  width: 20rem;
+  width: 24rem;
   
 }
 .product-img{
@@ -153,30 +153,24 @@ margin: 0 auto;
   cursor: pointer;
   background-color: transparent;
 }
-
-.featured-product-heading{
-
-}
 .featured-products{
   display: flex;
   gap: 1rem;
-  min-height: 80vh;
+  min-height: 50vh;
   height: auto;
-  margin: 0 auto;
-  
 }
 .featured-product{
-height: 22rem;
-width: 17rem;
-border: 2px solid #000;
+height: 25rem;
+width: 20rem;
+/* border: 2px solid #000; */
 margin: 0 auto;
 padding: 1rem;
 text-align: center;
-box-shadow: 0px 8px 20px 3px #313131;
+/* box-shadow: 0px 8px 20px 3px #313131; */
 }
 .feature-img-wrap{
-  width: 15rem;
-  height: 13rem;
+  width: 18rem;
+  height: 17rem;
 }
 .feature-product-img{
   width: 100%;
@@ -196,20 +190,21 @@ box-shadow: 0px 8px 20px 3px #313131;
   background-color: #000;
 }
 .sale{
-  min-height: 90vh;
+  min-height: 50vh;
   height: auto;
   display: flex;
   gap: 1rem;
 }
 .sale-product{
-  height: 20rem;
-  width: 35rem;
+  height: 25rem;
+  width: 40rem;
   position: relative;
+  margin: 0 auto;
   
 }
 .sale-product img{
   object-fit: contain;
-  width:35rem ;
+  width:40rem ;
 }
 .sale-end-wrap{
   position: absolute;
@@ -221,7 +216,4 @@ box-shadow: 0px 8px 20px 3px #313131;
 }
 .sale-end-wrap a{
   text-decoration: none !important;
-}
-.sale-end{
- 
 }
