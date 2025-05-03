@@ -37,48 +37,83 @@ setInterval(()=>{
 },3000)
 
 // ####### Sale Timer #######
-
-const endDate = new Date("April 15,2025 20:59");
-const newDate = new Date(Date.now());
-
 const days = document.querySelectorAll('.days');
 const hours = document.querySelectorAll('.hours');
 const minutes = document.querySelectorAll('.minutes');
 
-const endDay = endDate.getDate();
-const endHours = endDate.getHours();
-const endMinutes = endDate.getMinutes();
-// console.log(newDate);
+const endDate = new Date("May 15,2025 23:59");
+const newDate = new Date();
+const diff = endDate - newDate;
+console.log(diff);
 
-const todayDate = newDate.getDate();
-const todayHours = newDate.getHours();
-const todayMinutes = newDate.getMinutes();
-// console.log(todayMinutes);
+function updateTimer(){
+    const finalDays =Math.floor( diff / (1000 * 60 *60 *24));
+    const finalHours = Math.floor(diff % (1000 * 60 *60 *24)/(1000 *60 * 60)) ;
+    const finalMinutes =Math.floor(diff / (1000 * 60 *60)/(1000 * 60)) ;
 
-console.log(days)
+    // if(finalMinutes <= 0){
+    //     finalHours - 1;
+    //     return finalHours
+    // }else if(finalHours <= 0){
+    //     finalDays - 1;
+    //     return finalDays
+    // }
 
-function changeDate(){
-const finalMinutes = endMinutes - todayMinutes;
-const finalHours = endHours - todayHours;
-const finalDays = endDay - todayDate;
+    days.forEach(day => day.textContent = finalDays)
+    hours.forEach(hour => hour.textContent = finalHours)
+    minutes.forEach(minute => minute.textContent = finalMinutes)
 
-days.forEach((day) => {
-    day.textContent = finalDays;
-})
-hours.forEach((hour) => {
-    hour.textContent = -finalHours;
-})
-minutes.forEach((minute) => {
-    
-    minute.textContent = finalMinutes;
-})
-
-
-console.log(finalDays)
 }
 
+setInterval(updateTimer,1000);
+
+updateTimer()
 
 
-// console.log(changeDate())
 
+
+
+
+
+
+
+// const endDay = endDate.getDate();
+// const endHours = endDate.getHours();
+// const endMinutes = endDate.getMinutes();
+// console.log(newDate);
+
+// const todayDate = newDate.getDate();
+// const todayHours = newDate.getHours();
+// const todayMinutes = newDate.getMinutes();
+// // console.log(todayMinutes);
+
+// console.log(days)
+
+// function changeDate(){
+// const finalMinutes = endMinutes - todayMinutes;
+// const finalHours = endHours - todayHours;
+// const finalDays = endDay - todayDate;
+
+// days.forEach((day) => {
+//     day.textContent = finalDays;
+// })
+// hours.forEach((hour) => {
+//     hour.textContent = finalHours;
+// })
+
+//     minutes.forEach((minute) => {
+    
+//         minute.textContent = finalMinutes;
+//     })
+
+// // minutes.forEach((minute) => {
+    
+// //     minute.textContent = finalMinutes;
+// // })
+
+// }
+
+// setInterval(changeDate,1000);
+// // console.log(changeDate())
+// changeDate()
 
