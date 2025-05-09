@@ -80,3 +80,28 @@ setInterval(updateTimer,1000);
 
 // ############ Testimonials Area #########
 
+const testimonial = document.querySelectorAll('.testimonial');
+const nextTestiBtn = document.querySelector('.testi-btn-next');
+const prevTestiBtn = document.querySelector('.testi-btn-prev');
+let indexTest = 0;
+
+function slideTestimonial(index){
+if(index >= testimonial.length){
+    indexTest = 0;
+}else if(index < 0){
+indexTest = testimonial.length - 1;
+}else{
+    indexTest = index;
+}
+const testiOffset = -indexTest * 10;
+document.querySelector('.testimonial-wrap').style.transform = `translateX(${testiOffset}%)`
+}
+
+nextTestiBtn.addEventListener('click',function(){
+    slideTestimonial(indexTest - 1);
+})
+prevTestiBtn.addEventListener('click',function(){
+    slideTestimonial(indexTest + 1);
+})
+
+
