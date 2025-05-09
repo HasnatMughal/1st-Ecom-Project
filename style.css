@@ -219,3 +219,48 @@ text-align: center;
 .sale-end-wrap a{
   text-decoration: none !important;
 }
+.testimonials{
+overflow: hidden;
+  height: 70vh;
+}
+.testimonial-wrap{
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  transition: transform ease 10s;
+  height: 50vh;
+
+}
+.testimonial .profile{
+  display: flex;
+ align-items: center;
+ gap: 1rem;
+}
+.comment-text{
+  font-size: 12px;
+}
+.profile-txt h4{
+  font-size: 1.2rem;
+}
+.profile-txt p{
+font-size: 10px;
+}
+.profile-pic{
+  border-radius: 50%;
+}
+.profile-pic img{
+  width: 3rem;
+  border-radius: 30%;
+  
+}
+.testimonial{
+  position: relative;
+  width: 25rem;
+  padding: 1rem;
+  height: 12rem;
+
+  object-fit: contain;
+  border: 1px solid black;
+  box-shadow: 0px 4px 10px 0px #313131;
+  margin: 0 auto;
+  }
