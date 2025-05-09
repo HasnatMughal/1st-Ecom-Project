@@ -49,6 +49,7 @@ transition: all ease-in-out 0.2s;
     transform: translate(-50%,-50%);
     background-color: #fff;
     color: #313131;
+    border: 1px solid #000;
     width: 8rem;
     height: 3rem;
     border: none;
@@ -57,6 +58,7 @@ transition: all ease-in-out 0.2s;
   .hero-btn:hover{
     background-color: transparent;
     color: white;
+    border: 1px solid white;
   }
   .slide-image-wrap{
     position: relative;
@@ -114,10 +116,12 @@ margin: 0 auto;
 }
 .shop-cat .category{
   position: relative;
-width: 30%;
+width: 25rem;
 height: 28rem;
 object-fit: contain;
-/* border: 1px solid black; */
+border: 2px solid black;
+border-radius:10px ;
+padding: 1rem;
 /* box-shadow: 0px 12px 20px 5px #313131; */
 margin: 0 auto;
 }
@@ -161,13 +165,20 @@ margin: 0 auto;
 }
 .featured-product{
 height: 25rem;
-width: 25%;
+width: 20rem;
 border: 2px solid #000;
 border-radius: 10px;
 margin: 0 auto;
 padding: 1rem;
 text-align: center;
 /* box-shadow: 0px 8px 20px 3px #313131; */
+}
+.product-bottom{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .feature-img-wrap{
   width: 100%;
@@ -221,7 +232,7 @@ text-align: center;
 }
 .testimonials{
 /* overflow: hidden; */
-  height: 100vh;
+  height: 50vh;
   min-width: 100%;
   width: 100vw;
 overflow: hidden;
@@ -256,7 +267,7 @@ overflow: hidden;
   gap: 3rem;
   flex-direction: row;
   transition: transform ease 1s;
-  height: 40vh;
+  height: 30vh;
   padding: 2rem;
   overflow: hidden;
   width:200%;
@@ -286,11 +297,65 @@ font-size: 10px;
 }
 .testimonial{
   position: relative;
-  width: 35rem;
+  width: 40rem;
   padding: 1rem;
-  height: 15rem;
+  height: 12rem;
   object-fit: contain;
   border: 1px solid black;
   box-shadow: 0px 4px 10px 0px #313131;
 
+  }
+.subscribe{
+  height: 30vh;
+}
+  .input-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .email-ip{
+    width: 15rem;
+    height: 2rem;
+  }
+  .sub-btn{
+    height: 2.4rem;
+    width: 6rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  .sub-btn:hover{
+    background-color: #000;
+    color: #fff;
+  }
+  .sub-head{
+    font-size: 2rem;
+    text-align: center;
+    color: #000;
+  }
+
+  .footer{
+    height: 20vh;
+    border: 1px solid #331111;
+    background-color: #313131;
+  }
+  .footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .footer-wrap a,.footer-wrap li{
+    
+    text-decoration: none !important;
+    font-size: 10px !important;
+    list-style: none;
+  }
+  .footer-wrap h3, .footer-wrap h4{
+    color: #fff;
+    font-size: 2rem;
+  }
+  .footer-logo{
+    width: 15rem;
   }
