@@ -233,7 +233,8 @@ text-align: center;
 }
 .testimonials{
 /* overflow: hidden; */
-  height: 50vh;
+  min-height: 50vh;
+  height: auto;
   min-width: 100%;
   width: 100vw;
 overflow: hidden;
@@ -308,7 +309,11 @@ font-size: 10px;
   }
 .subscribe{
   min-height: 30vh;
+<<<<<<< HEAD
   height:auto
+=======
+  height: auto
+>>>>>>> 91b49fcc23cc0be153db87c3678f34e822473f5d
 }
   .input-area{
     display: flex;
@@ -338,7 +343,8 @@ font-size: 10px;
   }
 
   .footer{
-    height: 20vh;
+    height: auto;
+    min-height: 20vh;
     border: 1px solid #331111;
     background-color: #313131;
   }
