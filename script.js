@@ -37,48 +37,73 @@ setInterval(()=>{
 },3000)
 
 // ####### Sale Timer #######
-
-const endDate = new Date("April 15,2025 20:59");
-const newDate = new Date(Date.now());
-
 const days = document.querySelectorAll('.days');
 const hours = document.querySelectorAll('.hours');
 const minutes = document.querySelectorAll('.minutes');
 
-const endDay = endDate.getDate();
-const endHours = endDate.getHours();
-const endMinutes = endDate.getMinutes();
-// console.log(newDate);
 
-const todayDate = newDate.getDate();
-const todayHours = newDate.getHours();
-const todayMinutes = newDate.getMinutes();
-// console.log(todayMinutes);
+ 
+function updateTimer(){
+    const endDate = new Date("May 15,2025 23:59");
+const newDate = new Date();
+// const diff = endDate - newDate;
 
-console.log(days)
+const LastDays = endDate.getDate();
+const LastHours = endDate.getHours();
+const LastMinutes = endDate.getMinutes();
 
-function changeDate(){
-const finalMinutes = endMinutes - todayMinutes;
-const finalHours = endHours - todayHours;
-const finalDays = endDay - todayDate;
+const newDays = newDate.getDate();
+const newHours = newDate.getHours();
+const newMinutes = newDate.getMinutes();
+// console.log(LastDays);
+// console.log(LastHours);
+// console.log(LastMinutes);
 
-days.forEach((day) => {
-    day.textContent = finalDays;
-})
-hours.forEach((hour) => {
-    hour.textContent = -finalHours;
-})
-minutes.forEach((minute) => {
-    
-    minute.textContent = finalMinutes;
-})
+    const finalDays = LastDays - newDays;
+    const finalHours = LastHours - newHours;
+    const finalMinutes = LastMinutes - newMinutes;
+    console.table(finalDays, finalHours , finalMinutes);
 
 
-console.log(finalDays)
+    days.forEach(day => day.innerHTML = finalDays);
+    hours.forEach(hour => hour.innerHTML = finalHours);
+    minutes.forEach(minute => minute.innerHTML = finalMinutes);
+
+
+}
+updateTimer();
+
+
+
+setInterval(updateTimer,1000);
+
+
+// ############ Testimonials Area #########
+
+const testimonial = document.querySelectorAll('.testimonial');
+const nextTestiBtn = document.querySelector('.testi-btn-next');
+const prevTestiBtn = document.querySelector('.testi-btn-prev');
+let indexTest = 0;
+
+function slideTestimonial(index){
+if(index >= testimonial.length){
+    indexTest = 0;
+}else if(index < 0){
+indexTest = testimonial.length - 1;
+}else{
+    indexTest = index;
+}
+const testiOffset = -indexTest * 10;
+document.querySelector('.testimonial-wrap').style.transform = `translateX(${testiOffset}%)`
 }
 
+nextTestiBtn.addEventListener('click',function(){
+    slideTestimonial(indexTest - 1);
+})
+prevTestiBtn.addEventListener('click',function(){
+    slideTestimonial(indexTest + 1);
+})
 
 
-// console.log(changeDate())
-
+// #################################
 
