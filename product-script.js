@@ -23,3 +23,19 @@ trouserBtn.addEventListener('click',function(){
 jacketWrap.classList.remove('active');
 coatWrap.classList.remove('active')
 })
+
+
+// ###############################
+
+
+
+const prices = [12.99 , 15.99 , 10.99, 9.99 ,12.99 , 15.99 , 10.99, 9.99 ,12.99 , 15.99 , 10.99, 9.99 ,12.99 , 15.99 , 10.99, 7.99 ,4.99 , 5.99 ,5.99];
+
+const price = document.querySelectorAll('.price');
+
+price.forEach((price, index) => {
+price.innerHTML = prices[index]
+})
+
+
+// ############################
