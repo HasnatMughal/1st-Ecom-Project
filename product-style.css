@@ -162,6 +162,8 @@ position: absolute;
   min-height: 100vh;
   height: auto;
   background-color: #fff;
+  right: 5px;
+  top: 10%;
 }
 .cart::after{
   content: '';
@@ -184,6 +186,7 @@ padding: 1rem;
   gap: 1rem;
   align-items: center;
   position: relative;
+  margin: 1rem 0;
 }
 .cart-product-img{
   width: 8rem;
@@ -207,12 +210,32 @@ padding: 1rem;
   border: none;
   background-color: transparent;
 }
-
 .calculation{
-  display: flex;
+ float: right;
+ width: 30%;
+ border: 1px solid black;
+ padding: 1rem;
+
 }
+.calculation::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
 
 .total-calculate-btn{
   border: none;
   background-color: transparent;
+  
 }
+
+/* .calc-desc .total-amount{
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.calc-desc .total-amount-head{
+  position: absolute;
+  top: 10px;
+} */

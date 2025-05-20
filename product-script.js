@@ -39,3 +39,26 @@ price.innerHTML = prices[index]
 
 
 // ############################
+
+function addCartProduct(){
+    
+    let cartImg = document.createElement('img');
+    cartImg.className('cart-product-img');
+    cartImg.src = 'assessts/img/Products/pro1.png'
+    let productName = document.createElement('p');
+    productName.className('cart-product-name');
+    let productPrice = document.createElement('p');
+    productPrice.className('cart-product-price');
+
+      let cartDescDiv = document.createElement('div');
+    cartDescDiv.className('cart-product-desc');
+    cartDescDiv.appendChild(cartImg);
+    cartDescDiv.appendChild(productName);
+    cartDescDiv.appendChild(productPrice);
+
+    let cartProduct = document.createElement('div');
+    cartProduct.className('cart-product');
+
+   
+    
+}
