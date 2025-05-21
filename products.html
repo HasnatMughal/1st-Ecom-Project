@@ -24,13 +24,7 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -53,9 +47,36 @@
 
 <!-- ################################################# -->
     <section class="hero ">
+<div class="cart">
+            <h2 class="cart-head">Cart</h2>
+            <div class="cart-products-wrap">
+                <div class="cart-product">
+                    <img class="cart-product-img" src="assessts/img/Products/pro1.png" alt="">
+                    <div class="cart-product-desc">
+                        <p class="cart-product-name">Name</p>
+                        <p class="cart-product-price">Price</p>
+                    </div>
+                    <button class="remove-btn">Remove</button>
+                </div>
+                 <div class="cart-product">
+                    <img class="cart-product-img" src="assessts/img/Products/pro1.png" alt="">
+                    <div class="cart-product-desc">
+                        <p class="cart-product-name">Name</p>
+                        <p class="cart-product-price">Price</p>
+                    </div>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="calculation">
+                 <button class="total-calculate-btn">Calculate</button><br><br>
+                <p class="total-amount-head">Total Price :<span class="total-amount">   Price</span></p>
+           
+            </div>
+        </div>
+        
 
 
-        <div class="jackets-wrap product-types active">
+        <div class="jackets-wrap product-types active" id="jackets-cat">
         <h1 class="hero-head">Jackets</h1>
         <div class="product-wrap container">
             <div class="product">
@@ -64,7 +85,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -73,8 +94,8 @@
                 <img src="assessts/img/Products/pro2.png" alt="">
             </div>
             <div class="bottom">
-                <h4>Product</h4>
-                <h5>Price</h5>
+                <h4 >Product</h4>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -84,7 +105,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -94,7 +115,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -104,7 +125,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -114,7 +135,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -124,7 +145,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -134,7 +155,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -144,7 +165,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -154,7 +175,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -164,14 +185,14 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
         </div>
     </div>
 
-    <div class="coats-wrap product-types">
+    <div class="coats-wrap product-types" id="coats-cat">
         <h1 class="hero-head">Coats</h1>
         <div class="product-wrap container">
             <div class="product">
@@ -180,7 +201,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -192,7 +213,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -204,7 +225,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -216,14 +237,14 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
         </div>
     </div>
 
-    <div class="trousers-wrap product-types">
+    <div class="trousers-wrap product-types" id="trousers-cat">
         <h1 class="hero-head">Trousers</h1>
         <div class="product-wrap container">
             <div class="product">
@@ -232,7 +253,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -242,7 +263,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -252,7 +273,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>
@@ -262,7 +283,7 @@
             </div>
             <div class="bottom">
                 <h4>Product</h4>
-                <h5>Price</h5>
+                <h5 class="product-price"><span class="price">Price</span>$</h5>
                 <button class="cart-btn">Add to Cart</button>
             </div>
             </div>

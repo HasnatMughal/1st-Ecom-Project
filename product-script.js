@@ -23,3 +23,42 @@ trouserBtn.addEventListener('click',function(){
 jacketWrap.classList.remove('active');
 coatWrap.classList.remove('active')
 })
+
+
+// ###############################
+
+
+
+const prices = [12.99 , 15.99 , 10.99, 9.99 ,12.99 , 15.99 , 10.99, 9.99 ,12.99 , 15.99 , 10.99, 9.99 ,12.99 , 15.99 , 10.99, 7.99 ,4.99 , 5.99 ,5.99];
+
+const price = document.querySelectorAll('.price');
+
+price.forEach((price, index) => {
+price.innerHTML = prices[index]
+})
+
+
+// ############################
+
+function addCartProduct(){
+    
+    let cartImg = document.createElement('img');
+    cartImg.className('cart-product-img');
+    cartImg.src = 'assessts/img/Products/pro1.png'
+    let productName = document.createElement('p');
+    productName.className('cart-product-name');
+    let productPrice = document.createElement('p');
+    productPrice.className('cart-product-price');
+
+      let cartDescDiv = document.createElement('div');
+    cartDescDiv.className('cart-product-desc');
+    cartDescDiv.appendChild(cartImg);
+    cartDescDiv.appendChild(productName);
+    cartDescDiv.appendChild(productPrice);
+
+    let cartProduct = document.createElement('div');
+    cartProduct.className('cart-product');
+
+   
+    
+}
