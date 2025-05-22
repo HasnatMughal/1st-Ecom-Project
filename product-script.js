@@ -37,9 +37,48 @@ price.forEach((price, index) => {
 price.innerHTML = prices[index]
 })
 
+const productNames = [
+    "Black Puffer Jacket",
+    "Dark Grey Winter Coat",
+    "Olive Green Hooded Jacket",
+    "Navy Blue Puffer Coat",
+    "Black Bomber Jacket",
+    "Army Green Vest",
+    "Beige Hooded Vest",
+    "Black and White Varsity Jacket",
+    "Grey Pullover Hoodie",
+    "Black Zip-up Jacket",
+    "Black and Grey Checkered Jacket"
+  ];
+
+  const productName =
+   document.querySelectorAll('.product-name');
+   
+  productName.forEach((product, index) => {
+product.innerHTML = productNames[index]
+
+  })
 
 // ############################
 
+const addToCartBtn = document.querySelectorAll('.cart-btn');
+
+addToCartBtn.forEach(btn => btn.addEventListener('click',() => {
+const productElements = document.querySelector('.product');
+console.log(productElements);
+
+// productElements.forEach(element => {
+//   console.log(element.querySelector('.product-name'))
+// })
+// productElements.forEach(element => {
+//   console.log(element.querySelector('.price'))
+  
+// })
+
+
+
+  
+}))
 function addCartProduct(){
     
     let cartImg = document.createElement('img');
@@ -62,3 +101,4 @@ function addCartProduct(){
    
     
 }
+

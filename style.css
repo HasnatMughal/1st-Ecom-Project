@@ -210,15 +210,15 @@ text-align: center;
   gap: 1rem;
 }
 .sale-product{
-  height: 25rem;
-  width: 40rem;
+  /* height: 25rem; */
+  /* width: 40rem; */
   position: relative;
   margin: 0 auto;
   
 }
 .sale-product img{
   object-fit: contain;
-  width:40rem ;
+  width:500px ;
 }
 .sale-end-wrap{
   position: absolute;
@@ -269,7 +269,7 @@ overflow: hidden;
   gap: 3rem;
   flex-direction: row;
   transition: transform ease 1s;
-  height: 30vh;
+  /* height: 30vh; */
   padding: 2rem;
   overflow: hidden;
   width:200%;
@@ -308,12 +308,8 @@ font-size: 10px;
 
   }
 .subscribe{
-  min-height: 30vh;
-<<<<<<< HEAD
-  height:auto
-=======
-  height: auto
->>>>>>> 91b49fcc23cc0be153db87c3678f34e822473f5d
+  min-height: 50vh;
+  height:auto;
 }
   .input-area{
     display: flex;
