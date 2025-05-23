@@ -60,6 +60,29 @@ product.innerHTML = productNames[index]
   })
 
 // ############################
+function addCartProduct(){
+    
+    let cartProductName = document.createElement('p');
+    cartProductName.className = 'cart-product-name';
+    let productPrice = document.createElement('p');
+    productPrice.className = 'cart-product-price';
+
+      let cartDescDiv = document.createElement('div');
+    cartDescDiv.className ='cart-product-desc';
+    
+    cartDescDiv.appendChild(cartProductName);
+    cartDescDiv.appendChild(productPrice);
+
+    let cartProduct = document.createElement('div');
+    cartProduct.className = 'cart-product';
+
+    cartProductName.forEach((productName,index)  => {
+      productName.innerHTML = cartData[index]
+    })
+
+   
+    
+}
 
 let cartData = [];
 
@@ -73,35 +96,14 @@ const productPriceForCart = product.querySelector('.price').textContent;
 
 cartData.push({productNameForCart, productPriceForCart})
 
-
+addCartProduct()
 
 }))
 console.log(cartData);
 
-function addCartProduct(){
-    
-    let cartImg = document.createElement('img');
-    cartImg.className ='cart-product-img';
-    cartImg.src = 'assessts/img/Products/pro1.png'
-    let productName = document.createElement('p');
-    productName.className = 'cart-product-name';
-    let productPrice = document.createElement('p');
-    productPrice.className = 'cart-product-price';
 
-      let cartDescDiv = document.createElement('div');
-    cartDescDiv.className ='cart-product-desc';
-    cartDescDiv.appendChild(cartImg);
-    cartDescDiv.appendChild(productName);
-    cartDescDiv.appendChild(productPrice);
 
-    let cartProduct = document.createElement('div');
-    cartProduct.className = 'cart-product';
 
-   
-    
-}
-
-addCartProduct()
 
 // Notes and mistakes
 // const productElements = document.querySelectorAll('.product');
