@@ -61,12 +61,55 @@ product.innerHTML = productNames[index]
 
 // ############################
 
+let cartData = [];
+
+
 const addToCartBtn = document.querySelectorAll('.cart-btn');
 
-addToCartBtn.forEach(btn => btn.addEventListener('click',() => {
-const productElements = document.querySelector('.product');
-console.log(productElements);
+addToCartBtn.forEach(btn => btn.addEventListener('click',(event) => {
+const product = event.target.closest('.product');
+const productNameForCart = product.querySelector('.product-name').textContent;
+const productPriceForCart = product.querySelector('.price').textContent;
 
+cartData.push({productNameForCart, productPriceForCart})
+
+
+
+}))
+console.log(cartData);
+
+function addCartProduct(){
+    
+    let cartImg = document.createElement('img');
+    cartImg.className ='cart-product-img';
+    cartImg.src = 'assessts/img/Products/pro1.png'
+    let productName = document.createElement('p');
+    productName.className = 'cart-product-name';
+    let productPrice = document.createElement('p');
+    productPrice.className = 'cart-product-price';
+
+      let cartDescDiv = document.createElement('div');
+    cartDescDiv.className ='cart-product-desc';
+    cartDescDiv.appendChild(cartImg);
+    cartDescDiv.appendChild(productName);
+    cartDescDiv.appendChild(productPrice);
+
+    let cartProduct = document.createElement('div');
+    cartProduct.className = 'cart-product';
+
+   
+    
+}
+
+addCartProduct()
+
+// Notes and mistakes
+// const productElements = document.querySelectorAll('.product');
+// console.log(productElements);
+// productElements.forEach(element => {
+//   element.addEventListener('click',function(){
+//   console.log(element.querySelector('.product-name').textContent)  
+//   })
 // productElements.forEach(element => {
 //   console.log(element.querySelector('.product-name'))
 // })
@@ -74,31 +117,3 @@ console.log(productElements);
 //   console.log(element.querySelector('.price'))
   
 // })
-
-
-
-  
-}))
-function addCartProduct(){
-    
-    let cartImg = document.createElement('img');
-    cartImg.className('cart-product-img');
-    cartImg.src = 'assessts/img/Products/pro1.png'
-    let productName = document.createElement('p');
-    productName.className('cart-product-name');
-    let productPrice = document.createElement('p');
-    productPrice.className('cart-product-price');
-
-      let cartDescDiv = document.createElement('div');
-    cartDescDiv.className('cart-product-desc');
-    cartDescDiv.appendChild(cartImg);
-    cartDescDiv.appendChild(productName);
-    cartDescDiv.appendChild(productPrice);
-
-    let cartProduct = document.createElement('div');
-    cartProduct.className('cart-product');
-
-   
-    
-}
-
