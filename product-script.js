@@ -60,29 +60,40 @@ product.innerHTML = productNames[index]
   })
 
 // ############################
-function addCartProduct(){
+const cartWrap = document.querySelector('.cart-products-wrap');
+
+function addCartProduct(name,price ){
     
     let cartProductName = document.createElement('p');
     cartProductName.className = 'cart-product-name';
+   
     let productPrice = document.createElement('p');
     productPrice.className = 'cart-product-price';
 
+    let removeBtn = document.createElement('button');
+    removeBtn.className = 'remove-btn'
+   
+    
+
       let cartDescDiv = document.createElement('div');
     cartDescDiv.className ='cart-product-desc';
-    
     cartDescDiv.appendChild(cartProductName);
     cartDescDiv.appendChild(productPrice);
 
     let cartProduct = document.createElement('div');
     cartProduct.className = 'cart-product';
+    cartProduct.appendChild(cartDescDiv)
+    cartProduct.appendChild(removeBtn);
 
-    cartProductName.forEach((productName,index)  => {
-      productName.innerHTML = cartData[index]
-    })
+     removeBtn.textContent = "Remove"
+       cartProductName.textContent = `${name}` 
+productPrice.textContent = `${price}`+ "$"
 
-   
+    cartWrap.appendChild(cartProduct);
     
+    return{cartProductName,productPrice}
 }
+
 
 let cartData = [];
 
@@ -93,10 +104,12 @@ addToCartBtn.forEach(btn => btn.addEventListener('click',(event) => {
 const product = event.target.closest('.product');
 const productNameForCart = product.querySelector('.product-name').textContent;
 const productPriceForCart = product.querySelector('.price').textContent;
+// const productImgForCart = product.querySelector('.price').textContent;
 
-cartData.push({productNameForCart, productPriceForCart})
+cartData.push({productNameForCart, productPriceForCart});
 
-addCartProduct()
+
+addCartProduct(productNameForCart, productPriceForCart)
 
 }))
 console.log(cartData);
