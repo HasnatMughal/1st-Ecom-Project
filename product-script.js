@@ -62,6 +62,8 @@ product.innerHTML = productNames[index]
 // ############################
 const cartWrap = document.querySelector('.cart-products-wrap');
 
+
+let cartData = [];
 function addCartProduct(name,price ){
     
     let cartProductName = document.createElement('p');
@@ -85,17 +87,26 @@ function addCartProduct(name,price ){
     cartProduct.appendChild(cartDescDiv)
     cartProduct.appendChild(removeBtn);
 
-     removeBtn.textContent = "Remove"
+     removeBtn.textContent = "Remove";
+
+
+
        cartProductName.textContent = `${name}` 
 productPrice.textContent = `${price}`+ "$"
 
     cartWrap.appendChild(cartProduct);
     
-    return{cartProductName,productPrice}
+ 
 }
 
+function addPrice(){
 
-let cartData = [];
+}
+
+let Product = '';
+let ProductnameForCart = '';
+let ProductpriceForCart = null;
+
 
 
 const addToCartBtn = document.querySelectorAll('.cart-btn');
@@ -104,15 +115,40 @@ addToCartBtn.forEach(btn => btn.addEventListener('click',(event) => {
 const product = event.target.closest('.product');
 const productNameForCart = product.querySelector('.product-name').textContent;
 const productPriceForCart = product.querySelector('.price').textContent;
-// const productImgForCart = product.querySelector('.price').textContent;
 
-cartData.push({productNameForCart, productPriceForCart});
+  let total;
+
+const prices = document.querySelectorAll('.cart-product-price');
+
+prices.forEach(priceElement => {
+  console.log(priceElement.textContent);
+  
+})
 
 
-addCartProduct(productNameForCart, productPriceForCart)
+
+
+// prices.forEach(priceElement => {
+//   total += parseFloat(console.log(priceElement.textContent))
+// })
+
+
+
+
+addCartProduct(productNameForCart, productPriceForCart);
+
+// const calculateBtn = document.querySelector('.')
+
+return {
+  product,
+  productNameForCart,
+  productPriceForCart
+}
+
 
 }))
-console.log(cartData);
+// console.log(cartData);
+
 
 
 
