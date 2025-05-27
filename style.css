@@ -2,6 +2,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
 header{
   min-height: 95vh;
   height: auto;
@@ -218,7 +219,7 @@ text-align: center;
 }
 .sale-product img{
   object-fit: contain;
-  width:500px ;
+  width:600px ;
 }
 .sale-end-wrap{
   position: absolute;
@@ -363,3 +364,4 @@ font-size: 10px;
   .footer-logo{
     width: 15rem;
   }
+

@@ -60,6 +60,18 @@ product.innerHTML = productNames[index]
   })
 
 // ############################
+const cart = document.querySelector('.cart')
+
+const cartBtn = document.querySelector('.cart_btn');
+cartBtn.addEventListener('click',function(){
+  cart.classList.toggle('active')
+})
+
+
+
+
+
+
 const cartWrap = document.querySelector('.cart-products-wrap');
 
 
@@ -92,7 +104,7 @@ function addCartProduct(name,price ){
 
 
        cartProductName.textContent = `${name}` 
-productPrice.textContent = `${price}`+ "$"
+productPrice.textContent = `${price}` + '$'
 
     cartWrap.appendChild(cartProduct);
     
@@ -107,7 +119,7 @@ let Product = '';
 let ProductnameForCart = '';
 let ProductpriceForCart = null;
 
-
+let itemNo = 0;
 
 const addToCartBtn = document.querySelectorAll('.cart-btn');
 
@@ -116,12 +128,30 @@ const product = event.target.closest('.product');
 const productNameForCart = product.querySelector('.product-name').textContent;
 const productPriceForCart = product.querySelector('.price').textContent;
 
-  let total;
+addCartProduct(productNameForCart, productPriceForCart);
 
-const prices = document.querySelectorAll('.cart-product-price');
 
-prices.forEach(priceElement => {
-  console.log(priceElement.textContent);
+// #################################
+
+let incr = ++itemNo ;
+
+const productItemNo = document.querySelector('.cart-item-num');
+productItemNo.textContent = incr;
+
+
+// ###########################
+
+   let total = 0;
+const cartProductPrices = cartWrap.querySelectorAll('.cart-product-price');
+
+cartProductPrices.forEach(priceElement => {
+  const iop = parseFloat(priceElement.textContent)
+  
+  
+  total += iop;
+  
+  const totalAmount = document.querySelector('.total-amount');
+  totalAmount.innerHTML = total + '$';
   
 })
 
@@ -135,7 +165,7 @@ prices.forEach(priceElement => {
 
 
 
-addCartProduct(productNameForCart, productPriceForCart);
+
 
 // const calculateBtn = document.querySelector('.')
 

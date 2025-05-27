@@ -1,6 +1,7 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
 .navbar {
   background-color: #313131 !important;
 }
@@ -206,6 +207,17 @@ justify-content: center;
 /* .cart-product-desc .cart-product-price{
   text-align: ;
 } */
+.cart-item-num{
+  position: absolute;
+  bottom:-8px;
+  background-color: red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  right: -3px;
+  text-align: center;
+ 
+}
 .cart-product .remove-btn{
   position: absolute;
   right: 10px;
