@@ -48,7 +48,15 @@ const productNames = [
     "Black and White Varsity Jacket",
     "Grey Pullover Hoodie",
     "Black Zip-up Jacket",
-    "Black and Grey Checkered Jacket"
+    "Black and Grey Checkered Jacket",
+    "Brown Overcoat",
+  "Black Overcoat",
+  "Red Overcoat",
+  "Beige Overcoat",
+  "Black Joggers",
+  "Navy Blue Joggers",
+  "Gray Joggers",
+  "Charcoal Black Joggers"
   ];
 
   const productName =
@@ -155,7 +163,9 @@ cartProductPrices.forEach(priceElement => {
   
 })
 
+function saveToCart (product){
 
+}
 
 
 // prices.forEach(priceElement => {

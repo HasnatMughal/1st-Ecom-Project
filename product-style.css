@@ -46,6 +46,10 @@ li {
   color: #000;
   background-color: transparent;
 }
+.category-btn:hover{
+  color: gray;
+  transition: all ease-in-out 0.2s;
+}
 /* ############################ */
 .hero {
   min-height: 100vh;
@@ -204,9 +208,7 @@ justify-content: center;
  font-size: 1rem;
  
 }
-/* .cart-product-desc .cart-product-price{
-  text-align: ;
-} */
+
 .cart-item-num{
   position: absolute;
   bottom:-8px;
@@ -226,13 +228,13 @@ justify-content: center;
   background-color: transparent;
 }
 .calculation{
- float: right;
- width: 30%;
- border: 1px solid black;
- padding: 1rem;
- /* position: absolute;
-bottom: 30px;
-right: 10px; */
+
+display:flex;
+justify-content: space-between;
+
+ 
+ 
+ 
 }
 
 .calculation::after{
@@ -248,12 +250,3 @@ right: 10px; */
   
 }
 
-/* .calc-desc .total-amount{
-  position: absolute;
-  right: 5px;
-  top: 10px;
-}
-.calc-desc .total-amount-head{
-  position: absolute;
-  top: 10px;
-} */

@@ -219,7 +219,7 @@ text-align: center;
 }
 .sale-product img{
   object-fit: contain;
-  width:600px ;
+  width:38rem ;
 }
 .sale-end-wrap{
   position: absolute;
@@ -365,3 +365,72 @@ font-size: 10px;
     width: 15rem;
   }
 
+ 
+  /* ################# responsive ##################### */
+/* @media (min-width : 1200px) and (max-width:1400px) {
+  .hero{
+    height: auto;  
+  }
+  .shop-cat .category{
+    height: 23rem;
+  }
+  .featured-product{
+    height:22rem;
+  }
+  
+} */
+
+@media (min-width : 992px) and (max-width:1199px) {
+  html{
+    font-size: 90%;
+  }
+.hero{
+  height: auto;
+}
+.shop-cat .category{
+  
+    height: 23rem;
+  }
+  .sale-product{
+    height:23rem ;
+  }
+  .sale-product img{
+width: 35rem;
+  }
+  .testimonial{
+    height: 15rem ;
+    width: 30rem;
+  }
+}
+
+@media (min-width : 800px) and (max-width : 991px) {
+  .shop-cat .category{
+    height: 20rem;
+  }
+  .featured-product{
+    height: 18rem;
+  }
+  .sale-product{
+    height: 18rem;
+  }
+  .sale-product img{
+    width: 25rem;
+  }
+  .testimonial{
+    min-height: 16rem;
+    height: auto;
+  }
+  .footer li,.footer a,.footer h1,.footer h2, .footer h3 {
+    font-size: 90% !important;
+  }
+    .navbar-collapse {
+  /* position: absolute;  */
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #313131;
+  text-align: center;
+  z-index: 105; 
+  
+}
+}
