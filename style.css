@@ -1,5 +1,7 @@
 *{
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  /* margin: 0 auto; */
 }
 
 
@@ -395,7 +397,7 @@ font-size: 10px;
     height:23rem ;
   }
   .sale-product img{
-width: 35rem;
+width: 30rem;
   }
   .testimonial{
     height: 15rem ;
@@ -404,21 +406,47 @@ width: 35rem;
 }
 
 @media (min-width : 800px) and (max-width : 991px) {
-  .shop-cat .category{
-    height: 20rem;
+ 
+  .Categories{
+    min-height: 50vh;
   }
-  .featured-product{
+  .shop-cat .category{
     height: 18rem;
+  }
+  .featured-products{
+    min-height: 30vh;
+    height: 40vh;
+  }
+
+  .featured-product{
+    height: 16rem;
+    width: 10rem;
+
+  }
+ 
+  .sale{
+    min-height: 30vh;
+    height: 35vh;
   }
   .sale-product{
-    height: 18rem;
+    height: 16rem;
   }
   .sale-product img{
-    width: 25rem;
+    width: 23rem;
+  }
+   .testimonial-wrap{
+    width: 300%;
   }
   .testimonial{
-    min-height: 16rem;
+    min-height: 12rem;
     height: auto;
+  }
+  .subscribe{
+    min-height:30vh;
+    height: 35vh;
+  }
+  .footer{
+    margin: 0 auto;
   }
   .footer li,.footer a,.footer h1,.footer h2, .footer h3 {
     font-size: 90% !important;
@@ -433,4 +461,192 @@ width: 35rem;
   z-index: 105; 
   
 }
+
+}
+@media (min-width : 600px) and (max-width : 799px) {
+  html{
+    font-size: 75%;
+  }
+  header{
+    min-height:20vh;
+    height:auto;
+  }
+  .hero{
+    min-height: 30vh;
+    max-height: 70vh;
+  }
+.Categories{
+  min-height: 20vh;
+  height: 35vh;
+}
+  .shop-cat .category{
+    height: 18rem;
+  }
+  .featured-products{
+  min-height: 20vh;
+  height: 30vh;
+}
+  .featured-product{
+    height: 16rem;
+    min-width: 10rem;
+    width: auto;
+  }
+ .sale{
+  min-height: 20vh;
+  height: 30vh;
+ }
+  .sale-product{
+    height: 16rem;
+  }
+  .sale-product img{
+    width: 23rem;
+  }
+  .testimonial-wrap{
+    width: 300%;
+  }
+  .testimonials{
+    min-height: 20vh;
+    height: 45vh;
+  }
+  .testimonial{
+    min-height: 16rem;
+    height: auto;
+    width: 20rem;
+  }
+  .subscribe{
+    min-height: 10vh;
+    height: 25vh;
+  }
+}
+@media (min-width: 400px) and (max-width : 599px) {
+    html{
+    font-size: 60%;
+  }
+  header{
+    min-height:20vh;
+    height:auto;
+  }
+  .hero{
+    min-height: 30vh;
+    max-height: 70vh;
+  }
+.Categories{
+  min-height: 10vh;
+  height: 25vh;
+}
+  .shop-cat .category{
+    height: 18rem;
+  }
+  .featured-products{
+  min-height: 10vh;
+  height: 25vh;
+}
+  .featured-product{
+    height: 18rem;
+    min-width: 10rem;
+    width: auto;
+  }
+ .sale{
+  min-height: 10vh;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .sale-product{
+    height: 25rem;
+  }
+  .sale-product img{
+    width: 25rem;
+  }
+  .sale-end-wrap{
+    font-size: 50%;
+    
+  }
+  .testimonial-wrap{
+    width: 300%;
+  }
+  .testimonials{
+    min-height: 10vh;
+    height: 40vh;
+  }
+  .testimonial{
+    min-height: 16rem;
+    height: auto;
+    width: 20rem;
+  }
+  .subscribe{
+    min-height: 10vh;
+    height: 25vh;
+  }
+  .footer li,.footer a,.footer h1,.footer h2, .footer h3 {
+    font-size: 70% !important;
+  }
+}
+@media (min-width : 300px) and (max-width : 399px) {
+  html{
+    font-size: 50% !important;
+  }
+  header{
+    min-height:20vh;
+    height:auto;
+  }
+  .hero{
+    min-height: 30vh;
+    max-height: 70vh;
+  }
+.Categories{
+  min-height: 10vh;
+  height: 35vh;
+}
+  .shop-cat .category{
+    height: 18rem;
+  }
+  .featured-products{
+  min-height: 10vh;
+  height: 30vh;
+}
+  .featured-product{
+    height: 17rem;
+    min-width: 10rem;
+    width: auto;
+  }
+ .sale{
+  min-height: 10vh;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .sale-product{
+    height: 25rem;
+  }
+  .sale-product img{
+    width: 25rem;
+  }
+  .sale-end-wrap{
+    font-size: 70%;
+    
+  }
+  .testimonial-wrap{
+    width: 400%;
+  }
+  .testimonials{
+    min-height: 10vh;
+    height: 50vh;
+  }
+  .testimonial{
+    min-height: 16rem;
+    height: auto;
+    width: 20rem;
+  }
+  .subscribe{
+    min-height: 10vh;
+    height: 30vh;
+  }
+  .footer li,.footer a,.footer h1,.footer h2, .footer h3 {
+    font-size: 70% !important;
+  }
 }
